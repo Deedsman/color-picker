@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  position: relative;
+  height: 100vh;
 }
 
 .App-logo {
@@ -27,7 +29,16 @@
 .App-link {
   color: #61dafb;
 }
-
+// #red[type="range"]::-webkit-slider-runnable-track {
+//   background: linear-gradient(to right,black,red);
+// }
+// #green[type="range"]::-webkit-slider-runnable-track {
+//   background: linear-gradient(to right,black,rgb(0, 255, 0));
+// }
+// #blue[type="range"]::-webkit-slider-runnable-track {
+//   background: linear-gradient(to right,black,rgb(0, 0, 255));
+  
+// }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

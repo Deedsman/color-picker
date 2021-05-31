@@ -1,0 +1,142 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container__card{
+  width: 500px;
+  background-color:#f7f7f7 !important;
+  height: 500px;
+  display: flex;
+  
+  justify-content: center;
+  position: relative;
+}
+.colorInput{
+  outline-width: 0;
+  border: none;
+  width: 80%;
+  font-size: 1.5rem;
+  pointer-events: none;
+  color: gray;
+}
+.select {
+  width: 400px;
+  height: 50px;
+  display: block;
+  background: gray;
+  border-radius: 50px;
+  margin-top: 40px;
+  display: flex ;
+  align-items: center ;
+  background-color: white ;
+  border: 1px solid  #eaeaea ;
+}
+input[type="color"]{
+  -webkit-appearance: none;
+  pointer-events: none;
+	border: none;
+	width: 51px;
+  padding: 0;
+  height: 100%;
+  outline: none;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 0;
+}
+input[type="color"]::-moz-color-swatch {
+  border: 0;
+}
+input[type="color" i]{
+  outline: none;
+}
+
+.color__label{
+   height: 100%;
+   display: block;
+}
+input[type="color" i]::-webkit-color-swatch-wrapper {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: none;
+  padding: 0;
+}
+.MuiSvgIcon-root{
+   height: 1.9em !important;
+   width:  1.9em !important;
+}
+.color__rgb-container{
+  height: 100%;
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+}
+.color__rgb-container:hover{cursor: pointer;}
+
+.text__label{
+  width: 70%;
+
+}
+.box__range {
+  position: absolute;
+  z-index: -1;
+  background: white;
+  opacity: 0;
+  padding: 20px 10px;
+  top: 60px;
+  right: -60px;
+  box-shadow: #adadad 0px 3px 5px;
+  transition: opacity 0.3s ease-out;
+}
+.open__range{
+  opacity: 1;
+  z-index: 1;
+}
+.buttons__container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+ 
+}
+.MuiButton-containedPrimary{
+  margin-left: 20px !important;
+}
+input[type="range"] {
+  width:300px;
+  background-color: transparent;
+  -webkit-appearance: none;
+  &:focus {
+      outline: none;  
+  }
+}
+#red[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right,black,red);
+}
+#green[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right,black,rgb(0, 255, 0));
+}
+#blue[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right,black,rgb(0, 0, 255));
+  
+}
+input[type=range]::-webkit-slider-runnable-track {
+  transform: rotate(180deg);
+  border: 0px ;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: gray 0px 2px 5px;
+  margin: 6px;
+}
+input[type=range]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 253, 253, 1);
+  border: 2px white solid;
+  border-radius:100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  &:hover {
+      background: rgba(255, 253, 253, 0);
+  }
+}
