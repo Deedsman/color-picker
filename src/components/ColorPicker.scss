@@ -9,7 +9,6 @@
   background-color:#f7f7f7 !important;
   height: 500px;
   display: flex;
-  
   justify-content: center;
   position: relative;
 }
@@ -55,12 +54,15 @@ input[type="color" i]{
 .color__label{
    height: 100%;
    display: block;
+   cursor: pointer;
 }
 input[type="color" i]::-webkit-color-swatch-wrapper {
   background-color: transparent !important;
   border-color: transparent !important;
   outline: none;
   padding: 0;
+  border-left: 2px solid #f7f7f7 ;
+  border-right: 2px solid #f7f7f7;
 }
 .MuiSvgIcon-root{
    height: 1.9em !important;
@@ -72,12 +74,13 @@ input[type="color" i]::-webkit-color-swatch-wrapper {
   flex: 1;
   cursor: pointer;
 }
-.color__rgb-container:hover{cursor: pointer;}
+
 
 .text__label{
   width: 70%;
 
 }
+
 .box__range {
   position: absolute;
   z-index: -1;

@@ -43,14 +43,14 @@ const ColorPicker = () => {
   useEffect(() => {
     const closeMenu = (e) => {
       if (!menuRef.current.contains(e.target)) {
-        setOpen(open);
+        setOpen(false);
       }
     };
     document.addEventListener("mousedown", closeMenu);
     return () => {
       document.removeEventListener("mousedown", closeMenu);
     };
-  });
+  }, []);
   const cancelColor = () => {
     setColorR(newArr[0]);
     setColorG(newArr[1]);
@@ -100,7 +100,12 @@ const ColorPicker = () => {
 
           <div ref={menuRef} className='color__rgb-container'>
             <label onClick={toggle} className='color__label' htmlFor=''>
-              <input value={input} onChange={handleChange} type='color' />
+              <input
+                className='color__picker'
+                value={input}
+                onChange={handleChange}
+                type='color'
+              />
             </label>
             <div className={`box__range ${open && "open__range"}`}>
               <label htmlFor=''>R</label>

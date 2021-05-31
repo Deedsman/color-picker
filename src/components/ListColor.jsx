@@ -20,7 +20,6 @@ const useClickOutside = (handler) => {
 };
 
 export default function ListColor({ setStaticColor }) {
-  debugger;
   const [open, setOpen] = useState(false);
   const colors = [
     { name: "red", color: "#ff0000" },
