@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+open app on https://color-picker-z.web.app/
+
+use hooks (useState,useEffect,useRef) and deploy on firebase
+use Mterial-Ui for stye some components
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
